@@ -108,8 +108,7 @@ body {
     backdrop-filter: blur(6px);
 
     box-shadow:
-        0 12px 35px
-        rgba(0, 0, 0, 0.25);
+        0 12px 35px rgba(0, 0, 0, 0.25);
 
     transition:
         transform 0.25s ease,
@@ -119,8 +118,7 @@ body {
 
 .boton-info:hover {
     transform:
-        translateX(-50%)
-        translateY(-4px);
+        translateX(-50%) translateY(-4px);
 
     background:
         rgba(255, 188, 210, 1);
@@ -156,10 +154,8 @@ body {
 
     .boton-info {
         bottom:
-            max(
-                25px,
-                env(safe-area-inset-bottom)
-            );
+            max(25px,
+                env(safe-area-inset-bottom));
 
         width: calc(100% - 48px);
 
