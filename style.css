@@ -49,25 +49,15 @@ body {
     justify-content: center;
     align-items: center;
 
-    overflow: hidden;
-
     text-align: center;
 
-    /*
-        La imagen debe estar dentro de:
+    background-image: url("./images/fondo.png");
 
-        images/
-        ChatGPT Image 5 sept 2026, 21_10_47.png
-    */
-
-    background-image:
-        url("images/fondo.png");
-
-    background-size: cover;
-
-    background-position: center center;
-
+    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
+
+    background-color: #fff8ef;
 }
 
 
@@ -264,8 +254,7 @@ body {
     margin-bottom: 10px;
 
     text-shadow:
-        0 10px 30px
-        rgba(255, 108, 31, 0.08);
+        0 10px 30px rgba(255, 108, 31, 0.08);
 }
 
 
@@ -362,8 +351,7 @@ body {
     padding: 20px 40px;
 
     border-right:
-        1px solid
-        rgba(181, 0, 1, 0.25);
+        1px solid rgba(181, 0, 1, 0.25);
 }
 
 
@@ -405,11 +393,9 @@ body {
     padding: 110px 8%;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #fffaf3,
-            #f7eee5
-        );
+            #f7eee5);
 }
 
 
@@ -475,8 +461,7 @@ body {
     margin-bottom: 25px;
 
     box-shadow:
-        0 15px 40px
-        rgba(0, 0, 0, 0.10);
+        0 15px 40px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -528,8 +513,7 @@ body {
     transform: translateY(-4px);
 
     box-shadow:
-        0 10px 25px
-        rgba(0, 0, 0, 0.12);
+        0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -560,8 +544,7 @@ body {
     border: 15px solid white;
 
     box-shadow:
-        0 20px 50px
-        rgba(0, 0, 0, 0.16);
+        0 20px 50px rgba(0, 0, 0, 0.16);
 
     text-align: center;
 
@@ -583,8 +566,7 @@ body {
     left: 50%;
 
     transform:
-        translateX(-50%)
-        rotate(-3deg);
+        translateX(-50%) rotate(-3deg);
 
     width: 150px;
 
@@ -621,8 +603,7 @@ body {
     transform: rotate(-5deg);
 
     box-shadow:
-        0 15px 30px
-        rgba(0, 0, 0, 0.08);
+        0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -759,8 +740,7 @@ footer span {
         border-right: none;
 
         border-bottom:
-            1px solid
-            rgba(181, 0, 1, 0.20);
+            1px solid rgba(181, 0, 1, 0.20);
 
         padding: 35px 10px;
     }
