@@ -18,14 +18,15 @@
 
     <main class="contenido-info">
 
-        <!-- ============================= -->
-        <!-- PRIMERA SECCIÓN: INFORMACIÓN -->
-        <!-- ============================= -->
+
+        <!-- ================================= -->
+        <!-- INFORMACIÓN -->
+        <!-- ================================= -->
 
         <section class="seccion-info-principal">
 
             <img
-                src="assets/images/info1.png"
+                src="informacion.png"
                 alt="Información del cumpleaños de Ale"
                 class="imagen-informacion"
             >
@@ -33,71 +34,87 @@
         </section>
 
 
-        <!-- ============================= -->
-        <!-- AQUÍ HAREMOS LA UBICACIÓN -->
-        <!-- ============================= -->
+        <!-- ================================= -->
+        <!-- UBICACIÓN -->
+        <!-- ================================= -->
 
         <section class="seccion-ubicacion">
 
-    <div class="ubicacion-contenido">
+            <div class="ubicacion-contenido">
 
-        <!-- COLUMNA IZQUIERDA -->
-        <div class="ubicacion-mapa">
 
-            <p class="ubicacion-titulo">
-                UBICACIÓN
-            </p>
+                <!-- MAPA -->
 
-            <h2>
-                Ajuá
-            </h2>
+                <div class="ubicacion-mapa">
 
-            <p class="ubicacion-direccion">
-                Alajuela, Costa Rica
-            </p>
+                    <p class="ubicacion-titulo">
+                        UBICACIÓN
+                    </p>
 
-            <div class="mapa">
-                <iframe
-                    src="https://www.google.com/maps?q=Ajuá%20Alajuela%20Costa%20Rica&output=embed"
-                    loading="lazy"
-                    title="Ubicación de Ajuá"
-                ></iframe>
+                    <h2>
+                        Ajuá
+                    </h2>
+
+                    <p class="ubicacion-direccion">
+                        Alajuela, Costa Rica
+                    </p>
+
+
+                    <div class="mapa">
+
+                        <iframe
+                            src="https://www.google.com/maps?q=Ajuá%20Alajuela%20Costa%20Rica&output=embed"
+                            loading="lazy"
+                            title="Ubicación de Ajuá"
+                        ></iframe>
+
+                    </div>
+
+
+                    <a
+                        href="https://www.google.com/maps/search/Ajuá+Alajuela+Costa+Rica"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="boton-mapa"
+                    >
+                        <span>
+                            VER EN GOOGLE MAPS
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+                    </a>
+
+                </div>
+
+
+                <!-- VIDEO -->
+
+                <div class="video-contenedor">
+
+                    <div class="cinta-video"></div>
+
+                    <video
+                        class="video-mama"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                    >
+                        <source
+                            src="mama.mp4"
+                            type="video/mp4"
+                        >
+
+                        Tu navegador no puede reproducir el video.
+                    </video>
+
+                </div>
+
             </div>
 
-            <a
-                href="https://www.google.com/maps/search/Ajuá+Alajuela+Costa+Rica"
-                target="_blank"
-                rel="noreferrer"
-                class="boton-mapa"
-            >
-                <span>VER EN GOOGLE MAPS</span>
-                <span>→</span>
-            </a>
-
-        </div>
-
-
-        <!-- COLUMNA DERECHA -->
-        <div class="foto-ubicacion">
-
-            <div class="cinta-foto"></div>
-
-            <img
-                src="mama.jpg"
-                alt="Ale celebrando su cumpleaños"
-                class="foto-mama"
-            >
-
-            <div class="nota-foto">
-                Una mujer increíble<br>
-                merece un día increíble ♡
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
     </main>
 

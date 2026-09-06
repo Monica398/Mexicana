@@ -1,8 +1,13 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html,
 body {
@@ -10,14 +15,19 @@ body {
     min-height: 100%;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-    background: #171717;
     overflow-x: hidden;
 }
 
 
 /* =========================================
-PORTADA
+   PORTADA
 ========================================= */
 
 .pagina-portada {
@@ -25,11 +35,13 @@ PORTADA
 
     display: flex;
     justify-content: center;
+
+    background-color: #171717;
 }
 
 
 /* =========================================
-CONTENEDOR
+   CONTENEDOR PORTADA
 ========================================= */
 
 .portada {
@@ -42,12 +54,14 @@ CONTENEDOR
     display: flex;
     justify-content: center;
 
-    background: black;
+    background-color: #000;
+
+    overflow: hidden;
 }
 
 
 /* =========================================
-IMAGEN
+   IMAGEN PORTADA
 ========================================= */
 
 .imagen-portada {
@@ -66,7 +80,7 @@ IMAGEN
 
 
 /* =========================================
-BOTÓN
+   BOTÓN VER INFORMACIÓN
 ========================================= */
 
 .boton-info {
@@ -78,23 +92,44 @@ BOTÓN
     transform: translateX(-50%);
 
     width: calc(100% - 70px);
+
     max-width: 360px;
 
     padding: 17px 24px;
 
     display: flex;
+
     justify-content: space-between;
     align-items: center;
 
-    background: rgba(255, 188, 210, 0.92);
+    background:
+        rgba(
+            255,
+            188,
+            210,
+            0.92
+        );
 
-    border: 2px solid rgba(255, 255, 255, 0.6);
+    border:
+        2px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.6
+        );
 
     color: #362624;
 
-    font-family: Arial, sans-serif;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     font-size: 12px;
+
     font-weight: 600;
+
     letter-spacing: 3px;
 
     text-decoration: none;
@@ -104,10 +139,41 @@ BOTÓN
     backdrop-filter: blur(6px);
 
     box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.25);
+        0 12px 35px
+        rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
 
-    transition: 0.25s ease;
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
 }
+
+
+.boton-info:hover {
+    transform:
+        translateX(-50%)
+        translateY(-4px);
+
+    background:
+        rgba(
+            255,
+            188,
+            210,
+            1
+        );
+}
+
+
+.flecha {
+    font-size: 22px;
+    letter-spacing: 0;
+}
+
+
 /* =========================================
    PÁGINA INFORMACIÓN
 ========================================= */
@@ -120,12 +186,19 @@ BOTÓN
 
     background-color: #fff8ef;
 
+    color: #4b1b18;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
     overflow-x: hidden;
 }
 
 
 /* =========================================
-   CONTENIDO
+   CONTENIDO INFO
 ========================================= */
 
 .contenido-info {
@@ -141,6 +214,7 @@ BOTÓN
     width: 100%;
 
     display: flex;
+
     justify-content: center;
 
     background-color: #f8dfe1;
@@ -165,40 +239,25 @@ BOTÓN
 
 
 /* =========================================
-   SIGUIENTE SECCIÓN
-========================================= */
-
-.seccion-ubicacion {
-    min-height: 500px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #fff8ef;
-
-    color: #4b1b18;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    letter-spacing: 6px;
-}
-
-/* =========================================
    SECCIÓN UBICACIÓN
 ========================================= */
 
 .seccion-ubicacion {
-    padding: 90px 8%;
+    width: 100%;
+
+    padding: 90px 8% 110px;
+
     background-color: #fff7ed;
 }
 
 
 /* =========================================
-   CONTENEDOR
+   CONTENEDOR UBICACIÓN
 ========================================= */
 
 .ubicacion-contenido {
+    width: 100%;
+
     max-width: 1150px;
 
     margin: 0 auto;
@@ -215,7 +274,7 @@ BOTÓN
 
 
 /* =========================================
-   TÍTULO
+   TÍTULO UBICACIÓN
 ========================================= */
 
 .ubicacion-titulo {
@@ -248,11 +307,12 @@ BOTÓN
         "Times New Roman",
         serif;
 
-    font-size: clamp(
-        55px,
-        7vw,
-        90px
-    );
+    font-size:
+        clamp(
+            55px,
+            7vw,
+            90px
+        );
 
     font-weight: normal;
 
@@ -270,6 +330,8 @@ BOTÓN
     color: #4b1b18;
 
     font-size: 18px;
+
+    letter-spacing: 0;
 }
 
 
@@ -288,7 +350,12 @@ BOTÓN
 
     box-shadow:
         0 14px 35px
-        rgba(0, 0, 0, 0.10);
+        rgba(
+            0,
+            0,
+            0,
+            0.10
+        );
 }
 
 
@@ -315,7 +382,6 @@ BOTÓN
     display: flex;
 
     justify-content: space-between;
-
     align-items: center;
 
     background-color: #a9a227;
@@ -349,15 +415,20 @@ BOTÓN
 
     box-shadow:
         0 12px 25px
-        rgba(0, 0, 0, 0.12);
+        rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
 }
 
 
 /* =========================================
-   FOTO
+   CONTENEDOR VIDEO
 ========================================= */
 
-.foto-ubicacion {
+.video-contenedor {
     position: relative;
 
     width: 100%;
@@ -372,10 +443,10 @@ BOTÓN
 
 
 /* =========================================
-   FOTO DE MAMÁ
+   VIDEO
 ========================================= */
 
-.foto-mama {
+.video-mama {
     display: block;
 
     width: 100%;
@@ -384,19 +455,27 @@ BOTÓN
 
     object-fit: cover;
 
-    border: 12px solid white;
+    background-color: #000;
+
+    border:
+        12px solid white;
 
     box-shadow:
         0 20px 45px
-        rgba(0, 0, 0, 0.16);
+        rgba(
+            0,
+            0,
+            0,
+            0.16
+        );
 }
 
 
 /* =========================================
-   CINTA
+   CINTA DEL VIDEO
 ========================================= */
 
-.cinta-foto {
+.cinta-video {
     position: absolute;
 
     top: -20px;
@@ -412,62 +491,66 @@ BOTÓN
         rotate(-4deg);
 
     background-color:
-        rgba(118, 179, 208, 0.75);
+        rgba(
+            118,
+            179,
+            208,
+            0.75
+        );
 
     z-index: 3;
 }
 
 
 /* =========================================
-   NOTA ROSA
+   RESPONSIVE TABLET
 ========================================= */
 
-.nota-foto {
-    position: absolute;
+@media (max-width: 900px) {
 
-    right: -35px;
+    .ubicacion-contenido {
+        gap: 55px;
+    }
 
-    bottom: -35px;
-
-    padding: 24px 28px;
-
-    background-color: #fee9ed;
-
-    color: #4b1b18;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 19px;
-
-    font-style: italic;
-
-    line-height: 1.45;
-
-    text-align: center;
-
-    transform:
-        rotate(-6deg);
-
-    box-shadow:
-        0 12px 25px
-        rgba(0, 0, 0, 0.10);
 }
 
 
 /* =========================================
-   RESPONSIVE
-   iPhone + Samsung
+   RESPONSIVE MÓVIL
+   iPhone 11
+   iPhone 13 Pro Max
+   iPhone 16
+   Samsung
 ========================================= */
 
 @media (max-width: 700px) {
 
+    /* ==============================
+       INFORMACIÓN
+    ============================== */
+
+    .seccion-info-principal {
+        width: 100%;
+    }
+
+
+    .imagen-informacion {
+        width: 100%;
+
+        height: auto;
+
+        object-fit: contain;
+    }
+
+
+    /* ==============================
+       UBICACIÓN
+    ============================== */
+
     .seccion-ubicacion {
         padding:
             70px 6%
-            110px;
+            90px;
     }
 
 
@@ -475,7 +558,7 @@ BOTÓN
         grid-template-columns:
             1fr;
 
-        gap: 80px;
+        gap: 75px;
     }
 
 
@@ -489,35 +572,108 @@ BOTÓN
     }
 
 
+    /* ==============================
+       MAPA
+    ============================== */
+
     .mapa {
         height: 250px;
     }
 
 
+    /* ==============================
+       BOTÓN MAPS
+    ============================== */
+
     .boton-mapa {
+        padding:
+            16px 20px;
+
         font-size: 10px;
 
         letter-spacing: 2px;
-
-        padding:
-            16px 20px;
     }
 
 
-    .foto-ubicacion {
+    /* ==============================
+       VIDEO
+    ============================== */
+
+    .video-contenedor {
         width: 90%;
+
+        max-width: 420px;
     }
 
 
-    .nota-foto {
-        right: -10px;
+    .video-mama {
+        width: 100%;
 
-        bottom: -50px;
+        aspect-ratio: 4 / 5;
+
+        object-fit: cover;
+
+        border-width: 10px;
+    }
+
+
+    .cinta-video {
+        width: 115px;
+
+        height: 34px;
+    }
+
+}
+
+
+/* =========================================
+   PORTADA EN CELULAR
+========================================= */
+
+@media (max-width: 480px) {
+
+    .pagina-portada {
+        width: 100%;
+    }
+
+
+    .portada {
+        width: 100%;
+
+        min-height: 100svh;
+    }
+
+
+    .imagen-portada {
+        width: 100%;
+
+        min-height: 100svh;
+
+        object-fit: cover;
+
+        object-position: center top;
+    }
+
+
+    .boton-info {
+        bottom: 110px;
+
+        width:
+            calc(
+                100% - 48px
+            );
 
         padding:
-            20px 22px;
+            15px 20px;
 
-        font-size: 16px;
+        font-size: 11px;
+
+        letter-spacing: 2.3px;
+    }
+
+
+    .flecha {
+        font-size: 20px;
     }
 
 }
@@ -525,9 +681,27 @@ BOTÓN
 
 /* =========================================
    PANTALLAS ANGOSTAS
+   Samsung pequeños / iPhone angostos
 ========================================= */
 
 @media (max-width: 390px) {
+
+    .boton-info {
+        bottom: 105px;
+
+        width:
+            calc(
+                100% - 38px
+            );
+
+        padding:
+            14px 18px;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
 
     .seccion-ubicacion {
         padding-left: 5%;
@@ -545,70 +719,8 @@ BOTÓN
     }
 
 
-    .foto-ubicacion {
+    .video-contenedor {
         width: 94%;
     }
 
-
-    .nota-foto {
-        font-size: 15px;
-    }
-
-}
-/* =========================================
-   CELULAR
-   iPhone + Samsung
-========================================= */
-
-@media (max-width: 600px) {
-
-    .seccion-info-principal {
-        width: 100%;
-    }
-
-    .imagen-informacion {
-        width: 100%;
-        height: auto;
-
-        object-fit: contain;
-    }
-
-}
-/* =========================================
-CELULARES
-========================================= */
-
-@media (max-width: 480px) {
-
-    .portada {
-        width: 100%;
-    }
-
-
-    .imagen-portada {
-        width: 100%;
-
-        min-height: 100svh;
-
-        object-fit: cover;
-
-        object-position: center top;
-    }
-
-
-    @media (max-width: 480px) {
-
-    .boton-info {
-        bottom: 110px;
-
-        width: calc(100% - 48px);
-
-        padding: 15px 20px;
-
-        font-size: 11px;
-
-        letter-spacing: 2.3px;
-    }
-
-}
 }
