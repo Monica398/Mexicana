@@ -16,11 +16,12 @@ body {
     font-family: Georgia, "Times New Roman", serif;
     background-color: #fff8ef;
     color: #4b1b18;
+    overflow-x: hidden;
 }
 
 
 /* =========================================
-   PALETA DE COLORES
+   PALETA
 ========================================= */
 
 :root {
@@ -30,7 +31,6 @@ body {
     --naranja: #FF6C1F;
     --amarillo: #FDB52A;
     --rojo: #B50001;
-
     --crema: #fff8ef;
     --cafe: #4b1b18;
 }
@@ -42,6 +42,7 @@ body {
 
 .hero {
     min-height: 100vh;
+    width: 100%;
 
     position: relative;
 
@@ -51,32 +52,33 @@ body {
 
     text-align: center;
 
-    background-image: url("assets/images/fondo.png");
-
-    background-size: contain;
-    background-position: top center;
+    background-image: url("fondo.png");
     background-repeat: no-repeat;
+    background-position: top center;
 
-    background-color: #fff8ef;
+    /*
+        En computadora mantiene la imagen
+        vertical y centrada.
+    */
+    background-size: auto 100vh;
+
+    background-color: var(--crema);
+
+    overflow: hidden;
 }
 
 
 /* =========================================
-   CONTENIDO DE LA PORTADA
+   CONTENIDO PORTADA
 ========================================= */
 
 .hero-contenido {
     position: relative;
-
     z-index: 2;
 
-    width: min(900px, 90%);
+    width: min(560px, 90%);
 
-    /*
-        Lo bajamos para dejar libre
-        el papel picado de arriba.
-    */
-    margin-top: 170px;
+    margin-top: 210px;
 }
 
 
@@ -87,10 +89,10 @@ body {
 .texto-arco {
     position: relative;
 
-    width: 560px;
-    height: 130px;
+    width: 500px;
+    height: 145px;
 
-    margin: 0 auto -15px;
+    margin: 0 auto -10px;
 }
 
 
@@ -102,12 +104,7 @@ body {
 
     transform-origin: 0 180px;
 
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 17px;
+    font-size: 15px;
 
     letter-spacing: 2px;
 
@@ -116,7 +113,7 @@ body {
 
 
 /* =========================================
-   CURVA DEL TEXTO
+   ARCO
 ========================================= */
 
 .texto-arco span:nth-child(1) {
@@ -237,11 +234,11 @@ body {
 
 
 /* =========================================
-   NOMBRE ALE
+   ALE
 ========================================= */
 
 .hero h1 {
-    font-size: clamp(130px, 19vw, 240px);
+    font-size: clamp(120px, 15vw, 205px);
 
     font-weight: normal;
 
@@ -251,10 +248,9 @@ body {
 
     line-height: 0.82;
 
-    margin-bottom: 10px;
+    margin-top: 10px;
 
-    text-shadow:
-        0 10px 30px rgba(255, 108, 31, 0.08);
+    margin-bottom: 10px;
 }
 
 
@@ -263,7 +259,7 @@ body {
 ========================================= */
 
 .corazon {
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 25px;
 
     color: var(--naranja);
@@ -273,11 +269,11 @@ body {
 
 
 /* =========================================
-   CELEBREMOS UN AÑO MÁS
+   CELEBREMOS
 ========================================= */
 
 .hero h2 {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     font-size: 18px;
 
@@ -290,11 +286,11 @@ body {
 
 
 /* =========================================
-   FRASE VIRGO
+   FRASE
 ========================================= */
 
 .frase-principal {
-    font-size: clamp(25px, 3vw, 36px);
+    font-size: clamp(25px, 3vw, 35px);
 
     line-height: 1.4;
 
@@ -305,7 +301,7 @@ body {
 
 
 /* =========================================
-   SECCIÓN INFORMACIÓN
+   INFORMACIÓN
 ========================================= */
 
 .informacion {
@@ -331,7 +327,7 @@ body {
 
 
 /* =========================================
-   FECHA / HORA / LUGAR
+   DATOS
 ========================================= */
 
 .datos {
@@ -375,6 +371,8 @@ body {
     letter-spacing: 4px;
 
     margin-bottom: 15px;
+
+    color: var(--rojo);
 }
 
 
@@ -386,16 +384,18 @@ body {
 
 
 /* =========================================
-   SECCIÓN UBICACIÓN
+   UBICACIÓN
 ========================================= */
 
 .ubicacion {
     padding: 110px 8%;
 
     background:
-        linear-gradient(135deg,
+        linear-gradient(
+            135deg,
             #fffaf3,
-            #f7eee5);
+            #f7eee5
+        );
 }
 
 
@@ -406,17 +406,14 @@ body {
 
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        1fr 1fr;
 
     gap: 100px;
 
     align-items: center;
 }
 
-
-/* =========================================
-   TEXTO UBICACIÓN
-========================================= */
 
 .subtitulo {
     letter-spacing: 6px;
@@ -461,7 +458,8 @@ body {
     margin-bottom: 25px;
 
     box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.10);
+        0 15px 40px
+        rgba(0, 0, 0, 0.10);
 }
 
 
@@ -475,7 +473,7 @@ body {
 
 
 /* =========================================
-   BOTÓN GOOGLE MAPS
+   BOTÓN
 ========================================= */
 
 .boton-maps {
@@ -513,12 +511,13 @@ body {
     transform: translateY(-4px);
 
     box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.12);
+        0 10px 25px
+        rgba(0, 0, 0, 0.12);
 }
 
 
 /* =========================================
-   FOTO DE MAMÁ
+   FOTO
 ========================================= */
 
 .foto-contenedor {
@@ -544,7 +543,8 @@ body {
     border: 15px solid white;
 
     box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.16);
+        0 20px 50px
+        rgba(0, 0, 0, 0.16);
 
     text-align: center;
 
@@ -555,7 +555,7 @@ body {
 
 
 /* =========================================
-   CINTA DE LA FOTO
+   CINTA
 ========================================= */
 
 .cinta {
@@ -566,7 +566,8 @@ body {
     left: 50%;
 
     transform:
-        translateX(-50%) rotate(-3deg);
+        translateX(-50%)
+        rotate(-3deg);
 
     width: 150px;
 
@@ -580,7 +581,7 @@ body {
 
 
 /* =========================================
-   NOTA DE LA FOTO
+   NOTA
 ========================================= */
 
 .nota {
@@ -603,7 +604,8 @@ body {
     transform: rotate(-5deg);
 
     box-shadow:
-        0 15px 30px rgba(0, 0, 0, 0.08);
+        0 15px 30px
+        rgba(0, 0, 0, 0.08);
 }
 
 
@@ -645,21 +647,39 @@ footer span {
 
 
 /* =========================================
-   RESPONSIVE - CELULAR
+   TABLET
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
+    .ubicacion-contenido {
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================================
+   MÓVILES
+   Samsung / iPhone 11 /
+   iPhone 13 Pro Max / iPhone 16
+========================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        width: 100%;
+    }
+
 
     /* PORTADA */
 
     .hero {
         min-height: 100svh;
 
-        /*
-            En celular mantenemos el centro
-            de la imagen visible.
-        */
-        background-position: center top;
+        background-size: cover;
+
+        background-position: top center;
     }
 
 
@@ -670,23 +690,33 @@ footer span {
     }
 
 
-    /* TEXTO EN ARCO */
+    /* ARCO */
 
     .texto-arco {
         width: 330px;
 
-        height: 85px;
+        height: 105px;
 
-        transform: scale(0.75);
+        transform: scale(0.72);
 
-        margin-bottom: -25px;
+        margin-left: auto;
+
+        margin-right: auto;
+
+        margin-bottom: -22px;
     }
 
 
     /* ALE */
 
     .hero h1 {
-        font-size: 115px;
+        font-size: clamp(
+            95px,
+            29vw,
+            125px
+        );
+
+        margin-top: 0;
     }
 
 
@@ -695,7 +725,7 @@ footer span {
     .corazon {
         font-size: 38px;
 
-        margin-top: 20px;
+        margin-top: 22px;
 
         margin-bottom: 20px;
     }
@@ -704,27 +734,42 @@ footer span {
     /* CELEBREMOS */
 
     .hero h2 {
-        font-size: 12px;
+        font-size: 11px;
 
         letter-spacing: 3px;
+
+        line-height: 1.5;
+
+        padding: 0 15px;
     }
 
 
     /* FRASE */
 
     .frase-principal {
-        font-size: 23px;
+        font-size: clamp(
+            20px,
+            6vw,
+            24px
+        );
+
+        padding: 0 10px;
     }
 
 
     /* INFORMACIÓN */
 
     .informacion {
-        padding: 80px 8%;
+        padding:
+            75px 7%;
     }
 
 
     .titulo-seccion {
+        font-size: 15px;
+
+        letter-spacing: 5px;
+
         margin-bottom: 35px;
     }
 
@@ -737,12 +782,14 @@ footer span {
     .dato {
         width: 100%;
 
+        padding:
+            35px 10px;
+
         border-right: none;
 
         border-bottom:
-            1px solid rgba(181, 0, 1, 0.20);
-
-        padding: 35px 10px;
+            1px solid
+            rgba(181, 0, 1, 0.20);
     }
 
 
@@ -751,17 +798,30 @@ footer span {
     }
 
 
+    .dato p {
+        font-size: 20px;
+    }
+
+
     /* UBICACIÓN */
 
     .ubicacion {
-        padding: 80px 7%;
+        padding:
+            75px 6%;
     }
 
 
     .ubicacion-contenido {
         grid-template-columns: 1fr;
 
-        gap: 90px;
+        gap: 85px;
+    }
+
+
+    .subtitulo {
+        font-size: 12px;
+
+        letter-spacing: 4px;
     }
 
 
@@ -770,33 +830,65 @@ footer span {
     }
 
 
-    /* MAPA */
+    .direccion {
+        font-size: 18px;
+    }
+
 
     .mapa {
-        height: 270px;
+        height: 260px;
+
+        border-radius: 14px;
     }
 
 
     .boton-maps {
         max-width: 100%;
+
+        padding:
+            17px 20px;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
     }
 
 
     /* FOTO */
 
-    .foto-placeholder {
-        min-height: 430px;
+    .foto-contenedor {
+        width: 94%;
 
-        font-size: 20px;
+        margin: auto;
+    }
+
+
+    .foto-placeholder {
+        min-height: 420px;
+
+        padding: 25px;
+
+        border-width: 10px;
+
+        font-size: 19px;
+    }
+
+
+    .cinta {
+        width: 120px;
+
+        height: 40px;
     }
 
 
     .nota {
-        right: 0;
+        right: -5px;
 
         bottom: -55px;
 
-        font-size: 18px;
+        padding: 20px;
+
+        font-size: 17px;
     }
 
 
@@ -814,4 +906,86 @@ footer span {
 
         letter-spacing: 5px;
     }
+
+}
+
+
+/* =========================================
+   SAMSUNG / PANTALLAS MÁS ANGOSTAS
+   360 - 390px
+========================================= */
+
+@media (max-width: 390px) {
+
+    .hero-contenido {
+        margin-top: 135px;
+    }
+
+
+    .texto-arco {
+        transform: scale(0.65);
+
+        margin-bottom: -30px;
+    }
+
+
+    .hero h1 {
+        font-size: 98px;
+    }
+
+
+    .corazon {
+        font-size: 34px;
+    }
+
+
+    .hero h2 {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .frase-principal {
+        font-size: 20px;
+    }
+
+
+    .mapa {
+        height: 240px;
+    }
+
+
+    .foto-placeholder {
+        min-height: 390px;
+    }
+
+}
+
+
+/* =========================================
+   PANTALLAS MUY PEQUEÑAS
+========================================= */
+
+@media (max-width: 350px) {
+
+    .hero-contenido {
+        margin-top: 125px;
+    }
+
+
+    .texto-arco {
+        transform: scale(0.58);
+    }
+
+
+    .hero h1 {
+        font-size: 88px;
+    }
+
+
+    .frase-principal {
+        font-size: 18px;
+    }
+
 }
