@@ -51,7 +51,7 @@ body {
 
     text-align: center;
 
-    background-image: url("./images/fondo.png");
+    background-image: url("assets/images/fondo.png");
 
     background-size: contain;
     background-position: top center;
