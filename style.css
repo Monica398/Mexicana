@@ -1,38 +1,18 @@
-/* =========================================
-   CONFIGURACIÓN GENERAL
-========================================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html,
+body {
+    width: 100%;
+    min-height: 100%;
 }
 
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    background-color: #fff8ef;
-    color: #4b1b18;
+    background: #171717;
     overflow-x: hidden;
-}
-
-
-/* =========================================
-   PALETA
-========================================= */
-
-:root {
-    --verde: #AEA434;
-    --rosado: #FEEAED;
-    --azul: #76B3D0;
-    --naranja: #FF6C1F;
-    --amarillo: #FDB52A;
-    --rojo: #B50001;
-    --crema: #fff8ef;
-    --cafe: #4b1b18;
 }
 
 
@@ -40,435 +20,48 @@ body {
    PORTADA
 ========================================= */
 
-.hero {
-    min-height: 100vh;
-    width: 100%;
-
-    position: relative;
+.pagina-portada {
+    min-height: 100svh;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    background-image: url("assets/images/mexiquito2.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    /*
-        En computadora mantiene la imagen
-        vertical y centrada.
-    */
-    background-size: auto 100vh;
-
-    background-color: var(--crema);
-
-    overflow: hidden;
 }
 
 
 /* =========================================
-   CONTENIDO PORTADA
+   CONTENEDOR
 ========================================= */
 
-.hero-contenido {
-    position: relative;
-    z-index: 2;
-
-    width: min(560px, 90%);
-
-    margin-top: 210px;
-}
-
-
-/* =========================================
-   TEXTO EN ARCO
-========================================= */
-
-.texto-arco {
+.portada {
     position: relative;
 
-    width: 500px;
-    height: 145px;
+    width: min(100%, 700px);
 
-    margin: 0 auto -10px;
-}
-
-
-.texto-arco span {
-    position: absolute;
-
-    left: 50%;
-    bottom: 0;
-
-    transform-origin: 0 180px;
-
-    font-size: 15px;
-
-    letter-spacing: 2px;
-
-    color: #6e2922;
-}
-
-
-/* =========================================
-   ARCO
-========================================= */
-
-.texto-arco span:nth-child(1) {
-    transform: rotate(-42deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(2) {
-    transform: rotate(-39deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(3) {
-    transform: rotate(-36deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(4) {
-    transform: rotate(-33deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(5) {
-    transform: rotate(-30deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(6) {
-    transform: rotate(-27deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(7) {
-    transform: rotate(-24deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(8) {
-    transform: rotate(-21deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(9) {
-    transform: rotate(-18deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(10) {
-    transform: rotate(-15deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(11) {
-    transform: rotate(-12deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(12) {
-    transform: rotate(-9deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(13) {
-    transform: rotate(-6deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(14) {
-    transform: rotate(-3deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(15) {
-    transform: rotate(0deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(16) {
-    transform: rotate(3deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(17) {
-    transform: rotate(6deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(18) {
-    transform: rotate(9deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(19) {
-    transform: rotate(12deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(20) {
-    transform: rotate(15deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(21) {
-    transform: rotate(18deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(22) {
-    transform: rotate(21deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(23) {
-    transform: rotate(24deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(24) {
-    transform: rotate(27deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(25) {
-    transform: rotate(30deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(26) {
-    transform: rotate(33deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(27) {
-    transform: rotate(36deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(28) {
-    transform: rotate(39deg) translateY(-170px);
-}
-
-.texto-arco span:nth-child(29) {
-    transform: rotate(42deg) translateY(-170px);
-}
-
-
-/* =========================================
-   ALE
-========================================= */
-
-.hero h1 {
-    font-size: clamp(120px, 15vw, 205px);
-
-    font-weight: normal;
-
-    font-style: italic;
-
-    color: var(--naranja);
-
-    line-height: 0.82;
-
-    margin-top: 10px;
-
-    margin-bottom: 10px;
-}
-
-
-/* =========================================
-   CORAZÓN
-========================================= */
-
-.corazon {
-    margin-top: 30px;
-    margin-bottom: 25px;
-
-    color: var(--naranja);
-
-    font-size: 48px;
-}
-
-
-/* =========================================
-   CELEBREMOS
-========================================= */
-
-.hero h2 {
-    margin-bottom: 22px;
-
-    font-size: 18px;
-
-    letter-spacing: 6px;
-
-    font-weight: normal;
-
-    color: #5d2a25;
-}
-
-
-/* =========================================
-   FRASE
-========================================= */
-
-.frase-principal {
-    font-size: clamp(25px, 3vw, 35px);
-
-    line-height: 1.4;
-
-    font-style: italic;
-
-    color: #5d2a25;
-}
-
-
-/* =========================================
-   INFORMACIÓN
-========================================= */
-
-.informacion {
-    padding: 100px 10%;
-
-    background-color: var(--rosado);
-
-    text-align: center;
-}
-
-
-.titulo-seccion {
-    font-size: 18px;
-
-    letter-spacing: 7px;
-
-    font-weight: normal;
-
-    color: var(--rojo);
-
-    margin-bottom: 70px;
-}
-
-
-/* =========================================
-   DATOS
-========================================= */
-
-.datos {
-    max-width: 1000px;
-
-    margin: auto;
+    min-height: 100svh;
 
     display: flex;
-
     justify-content: center;
-}
 
-
-.dato {
-    width: 33.33%;
-
-    padding: 20px 40px;
-
-    border-right:
-        1px solid rgba(181, 0, 1, 0.25);
-}
-
-
-.dato:last-child {
-    border-right: none;
-}
-
-
-.icono {
-    font-size: 38px;
-
-    margin-bottom: 20px;
-}
-
-
-.dato h3 {
-    font-family: Arial, sans-serif;
-
-    font-size: 12px;
-
-    letter-spacing: 4px;
-
-    margin-bottom: 15px;
-
-    color: var(--rojo);
-}
-
-
-.dato p {
-    font-size: 22px;
-
-    line-height: 1.5;
+    background: black;
 }
 
 
 /* =========================================
-   UBICACIÓN
+   IMAGEN
 ========================================= */
 
-.ubicacion {
-    padding: 110px 8%;
+.imagen-portada {
+    display: block;
 
-    background:
-        linear-gradient(
-            135deg,
-            #fffaf3,
-            #f7eee5
-        );
-}
-
-
-.ubicacion-contenido {
-    max-width: 1200px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: 100px;
-
-    align-items: center;
-}
-
-
-.subtitulo {
-    letter-spacing: 6px;
-
-    font-size: 15px;
-
-    color: var(--rojo);
-
-    margin-bottom: 15px;
-}
-
-
-.mapa-info h2 {
-    font-size: 52px;
-
-    font-weight: normal;
-
-    margin-bottom: 5px;
-}
-
-
-.direccion {
-    font-size: 20px;
-
-    margin-bottom: 30px;
-}
-
-
-/* =========================================
-   MAPA
-========================================= */
-
-.mapa {
     width: 100%;
 
-    height: 320px;
+    height: auto;
 
-    overflow: hidden;
+    min-height: 100svh;
 
-    border-radius: 18px;
+    object-fit: cover;
 
-    margin-bottom: 25px;
-
-    box-shadow:
-        0 15px 40px
-        rgba(0, 0, 0, 0.10);
-}
-
-
-.mapa iframe {
-    width: 100%;
-
-    height: 100%;
-
-    border: none;
+    object-position: center top;
 }
 
 
@@ -476,516 +69,106 @@ body {
    BOTÓN
 ========================================= */
 
-.boton-maps {
-    width: 100%;
+.boton-info {
+    position: absolute;
 
-    max-width: 420px;
+    left: 50%;
+    bottom: 45px;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 70px);
+
+    max-width: 360px;
+
+    padding: 17px 24px;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 
-    padding: 18px 25px;
+    background: rgba(255, 188, 210, 0.92);
 
-    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
 
-    background-color: var(--verde);
-
-    color: white;
-
-    text-decoration: none;
+    color: #362624;
 
     font-family: Arial, sans-serif;
 
     font-size: 12px;
 
+    font-weight: 600;
+
     letter-spacing: 3px;
 
-    transition: 0.3s;
-}
+    text-decoration: none;
 
+    border-radius: 100px;
 
-.boton-maps:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 25px
-        rgba(0, 0, 0, 0.12);
-}
-
-
-/* =========================================
-   FOTO
-========================================= */
-
-.foto-contenedor {
-    position: relative;
-
-    transform: rotate(2deg);
-}
-
-
-.foto-placeholder {
-    min-height: 520px;
-
-    padding: 40px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    background-color: var(--azul);
-
-    border: 15px solid white;
+    backdrop-filter: blur(6px);
 
     box-shadow:
-        0 20px 50px
-        rgba(0, 0, 0, 0.16);
+        0 12px 35px
+        rgba(0, 0, 0, 0.25);
 
-    text-align: center;
-
-    font-size: 24px;
-
-    line-height: 1.6;
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
 }
 
 
-/* =========================================
-   CINTA
-========================================= */
-
-.cinta {
-    position: absolute;
-
-    top: -25px;
-
-    left: 50%;
-
+.boton-info:hover {
     transform:
         translateX(-50%)
-        rotate(-3deg);
+        translateY(-4px);
 
-    width: 150px;
-
-    height: 48px;
-
-    background-color:
-        rgba(118, 179, 208, 0.7);
-
-    z-index: 3;
+    background:
+        rgba(255, 188, 210, 1);
 }
 
 
-/* =========================================
-   NOTA
-========================================= */
-
-.nota {
-    position: absolute;
-
-    right: -40px;
-
-    bottom: -35px;
-
-    padding: 30px;
-
-    background-color: var(--rosado);
-
-    font-size: 22px;
-
-    line-height: 1.5;
-
-    font-style: italic;
-
-    transform: rotate(-5deg);
-
-    box-shadow:
-        0 15px 30px
-        rgba(0, 0, 0, 0.08);
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    min-height: 220px;
-
-    background-color: var(--verde);
-
-    color: white;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 20px;
-
-    letter-spacing: 7px;
-
-    text-align: center;
-}
-
-
-footer p {
+.boton-info span {
     font-size: 20px;
 }
 
 
-footer span {
-    font-size: 38px;
-}
-
-
 /* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-    .ubicacion-contenido {
-        gap: 50px;
-    }
-
-}
-
-
-/* =========================================
-   MÓVILES
-   Samsung / iPhone 11 /
-   iPhone 13 Pro Max / iPhone 16
+   CELULARES
 ========================================= */
 
 @media (max-width: 480px) {
 
-    body {
+    .portada {
         width: 100%;
     }
 
 
-    /* PORTADA */
+    .imagen-portada {
+        width: 100%;
 
-    .hero {
         min-height: 100svh;
 
-        background-size: cover;
+        object-fit: cover;
 
-        background-position: top center;
+        object-position: center top;
     }
 
 
-    .hero-contenido {
-        width: 92%;
+    .boton-info {
+        bottom:
+            max(
+                25px,
+                env(safe-area-inset-bottom)
+            );
 
-        margin-top: 150px;
-    }
+        width: calc(100% - 48px);
 
+        padding:
+            15px 20px;
 
-    /* ARCO */
-
-    .texto-arco {
-        width: 330px;
-
-        height: 105px;
-
-        transform: scale(0.72);
-
-        margin-left: auto;
-
-        margin-right: auto;
-
-        margin-bottom: -22px;
-    }
-
-
-    /* ALE */
-
-    .hero h1 {
-        font-size: clamp(
-            95px,
-            29vw,
-            125px
-        );
-
-        margin-top: 0;
-    }
-
-
-    /* CORAZÓN */
-
-    .corazon {
-        font-size: 38px;
-
-        margin-top: 22px;
-
-        margin-bottom: 20px;
-    }
-
-
-    /* CELEBREMOS */
-
-    .hero h2 {
         font-size: 11px;
 
-        letter-spacing: 3px;
-
-        line-height: 1.5;
-
-        padding: 0 15px;
-    }
-
-
-    /* FRASE */
-
-    .frase-principal {
-        font-size: clamp(
-            20px,
-            6vw,
-            24px
-        );
-
-        padding: 0 10px;
-    }
-
-
-    /* INFORMACIÓN */
-
-    .informacion {
-        padding:
-            75px 7%;
-    }
-
-
-    .titulo-seccion {
-        font-size: 15px;
-
-        letter-spacing: 5px;
-
-        margin-bottom: 35px;
-    }
-
-
-    .datos {
-        flex-direction: column;
-    }
-
-
-    .dato {
-        width: 100%;
-
-        padding:
-            35px 10px;
-
-        border-right: none;
-
-        border-bottom:
-            1px solid
-            rgba(181, 0, 1, 0.20);
-    }
-
-
-    .dato:last-child {
-        border-bottom: none;
-    }
-
-
-    .dato p {
-        font-size: 20px;
-    }
-
-
-    /* UBICACIÓN */
-
-    .ubicacion {
-        padding:
-            75px 6%;
-    }
-
-
-    .ubicacion-contenido {
-        grid-template-columns: 1fr;
-
-        gap: 85px;
-    }
-
-
-    .subtitulo {
-        font-size: 12px;
-
-        letter-spacing: 4px;
-    }
-
-
-    .mapa-info h2 {
-        font-size: 42px;
-    }
-
-
-    .direccion {
-        font-size: 18px;
-    }
-
-
-    .mapa {
-        height: 260px;
-
-        border-radius: 14px;
-    }
-
-
-    .boton-maps {
-        max-width: 100%;
-
-        padding:
-            17px 20px;
-
-        font-size: 10px;
-
-        letter-spacing: 2px;
-    }
-
-
-    /* FOTO */
-
-    .foto-contenedor {
-        width: 94%;
-
-        margin: auto;
-    }
-
-
-    .foto-placeholder {
-        min-height: 420px;
-
-        padding: 25px;
-
-        border-width: 10px;
-
-        font-size: 19px;
-    }
-
-
-    .cinta {
-        width: 120px;
-
-        height: 40px;
-    }
-
-
-    .nota {
-        right: -5px;
-
-        bottom: -55px;
-
-        padding: 20px;
-
-        font-size: 17px;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        margin-top: 40px;
-
-        min-height: 180px;
-    }
-
-
-    footer p {
-        font-size: 15px;
-
-        letter-spacing: 5px;
-    }
-
-}
-
-
-/* =========================================
-   SAMSUNG / PANTALLAS MÁS ANGOSTAS
-   360 - 390px
-========================================= */
-
-@media (max-width: 390px) {
-
-    .hero-contenido {
-        margin-top: 135px;
-    }
-
-
-    .texto-arco {
-        transform: scale(0.65);
-
-        margin-bottom: -30px;
-    }
-
-
-    .hero h1 {
-        font-size: 98px;
-    }
-
-
-    .corazon {
-        font-size: 34px;
-    }
-
-
-    .hero h2 {
-        font-size: 10px;
-
-        letter-spacing: 2px;
-    }
-
-
-    .frase-principal {
-        font-size: 20px;
-    }
-
-
-    .mapa {
-        height: 240px;
-    }
-
-
-    .foto-placeholder {
-        min-height: 390px;
-    }
-
-}
-
-
-/* =========================================
-   PANTALLAS MUY PEQUEÑAS
-========================================= */
-
-@media (max-width: 350px) {
-
-    .hero-contenido {
-        margin-top: 125px;
-    }
-
-
-    .texto-arco {
-        transform: scale(0.58);
-    }
-
-
-    .hero h1 {
-        font-size: 88px;
-    }
-
-
-    .frase-principal {
-        font-size: 18px;
+        letter-spacing: 2.3px;
     }
 
 }
