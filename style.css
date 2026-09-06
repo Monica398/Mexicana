@@ -8,18 +8,15 @@
     box-sizing: border-box;
 }
 
-
 html,
 body {
     width: 100%;
     min-height: 100%;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
     overflow-x: hidden;
@@ -48,7 +45,6 @@ body {
     position: relative;
 
     width: min(100%, 700px);
-
     min-height: 100svh;
 
     display: flex;
@@ -68,13 +64,11 @@ body {
     display: block;
 
     width: 100%;
-
     height: auto;
 
     min-height: 100svh;
 
     object-fit: cover;
-
     object-position: center top;
 }
 
@@ -92,81 +86,47 @@ body {
     transform: translateX(-50%);
 
     width: calc(100% - 70px);
-
     max-width: 360px;
 
     padding: 17px 24px;
 
     display: flex;
-
     justify-content: space-between;
     align-items: center;
 
-    background:
-        rgba(
-            255,
-            188,
-            210,
-            0.92
-        );
+    background: rgba(255, 188, 210, 0.92);
 
-    border:
-        2px solid
-        rgba(
-            255,
-            255,
-            255,
-            0.6
-        );
+    border: 2px solid rgba(255, 255, 255, 0.6);
+
+    border-radius: 100px;
 
     color: #362624;
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-
     font-weight: 600;
 
     letter-spacing: 3px;
 
     text-decoration: none;
 
-    border-radius: 100px;
-
     backdrop-filter: blur(6px);
 
     box-shadow:
-        0 12px 35px
-        rgba(
-            0,
-            0,
-            0,
-            0.25
-        );
+        0 12px 35px rgba(0, 0, 0, 0.25);
 
     transition:
         transform 0.25s ease,
         background-color 0.25s ease;
 }
 
-
 .boton-info:hover {
     transform:
         translateX(-50%)
         translateY(-4px);
 
-    background:
-        rgba(
-            255,
-            188,
-            210,
-            1
-        );
+    background: rgba(255, 188, 210, 1);
 }
-
 
 .flecha {
     font-size: 22px;
@@ -179,10 +139,10 @@ body {
 ========================================= */
 
 .pagina-info {
+    width: 100%;
+
     margin: 0;
     padding: 0;
-
-    width: 100%;
 
     background-color: #fff8ef;
 
@@ -208,13 +168,13 @@ body {
 
 /* =========================================
    PRIMERA SECCIÓN
+   IMAGEN DE INFORMACIÓN
 ========================================= */
 
 .seccion-info-principal {
     width: 100%;
 
     display: flex;
-
     justify-content: center;
 
     background-color: #f8dfe1;
@@ -222,16 +182,10 @@ body {
     overflow: hidden;
 }
 
-
-/* =========================================
-   IMAGEN INFORMACIÓN
-========================================= */
-
 .imagen-informacion {
     display: block;
 
     width: 100%;
-
     height: auto;
 
     object-fit: contain;
@@ -257,15 +211,13 @@ body {
 
 .ubicacion-contenido {
     width: 100%;
-
     max-width: 1150px;
 
     margin: 0 auto;
 
     display: grid;
 
-    grid-template-columns:
-        1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     gap: 90px;
 
@@ -289,12 +241,14 @@ body {
 
     font-size: 12px;
 
+    font-weight: 600;
+
     letter-spacing: 6px;
 }
 
 
 /* =========================================
-   AJUÁ
+   NOMBRE AJUÁ
 ========================================= */
 
 .ubicacion-mapa h2 {
@@ -307,16 +261,12 @@ body {
         "Times New Roman",
         serif;
 
-    font-size:
-        clamp(
-            55px,
-            7vw,
-            90px
-        );
+    font-size: clamp(55px, 7vw, 90px);
 
     font-weight: normal;
-
     font-style: italic;
+
+    letter-spacing: 0;
 }
 
 
@@ -341,27 +291,22 @@ body {
 
 .mapa {
     width: 100%;
-
     height: 300px;
 
     overflow: hidden;
 
     border-radius: 14px;
 
+    background-color: #eee7dd;
+
     box-shadow:
-        0 14px 35px
-        rgba(
-            0,
-            0,
-            0,
-            0.10
-        );
+        0 14px 35px rgba(0, 0, 0, 0.10);
 }
 
-
 .mapa iframe {
-    width: 100%;
+    display: block;
 
+    width: 100%;
     height: 100%;
 
     border: 0;
@@ -380,7 +325,6 @@ body {
     padding: 17px 23px;
 
     display: flex;
-
     justify-content: space-between;
     align-items: center;
 
@@ -388,7 +332,7 @@ body {
 
     border-radius: 100px;
 
-    color: white;
+    color: #ffffff;
 
     text-decoration: none;
 
@@ -403,42 +347,38 @@ body {
 
     letter-spacing: 3px;
 
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
     transition:
         transform 0.25s ease,
-        box-shadow 0.25s ease;
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
 }
 
-
 .boton-mapa:hover {
-    transform:
-        translateY(-4px);
+    transform: translateY(-4px);
+
+    background-color: #9b9522;
 
     box-shadow:
-        0 12px 25px
-        rgba(
-            0,
-            0,
-            0,
-            0.12
-        );
+        0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
 
 /* =========================================
-   CONTENEDOR VIDEO
+   CONTENEDOR DEL VIDEO
 ========================================= */
 
 .video-contenedor {
     position: relative;
 
     width: 100%;
-
     max-width: 440px;
 
     margin: 0 auto;
 
-    transform:
-        rotate(2deg);
+    transform: rotate(2deg);
 }
 
 
@@ -457,17 +397,10 @@ body {
 
     background-color: #000;
 
-    border:
-        12px solid white;
+    border: 12px solid #ffffff;
 
     box-shadow:
-        0 20px 45px
-        rgba(
-            0,
-            0,
-            0,
-            0.16
-        );
+        0 20px 45px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -479,151 +412,21 @@ body {
     position: absolute;
 
     top: -20px;
-
     left: 50%;
 
     width: 130px;
-
     height: 38px;
 
     transform:
         translateX(-50%)
         rotate(-4deg);
 
-    background-color:
-        rgba(
-            118,
-            179,
-            208,
-            0.75
-        );
+    background-color: rgba(118, 179, 208, 0.75);
 
     z-index: 3;
 }
 
 
-/* =========================================
-   RESPONSIVE TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-    .ubicacion-contenido {
-        gap: 55px;
-    }
-
-}
-
-
-/* =========================================
-   RESPONSIVE MÓVIL
-   iPhone 11
-   iPhone 13 Pro Max
-   iPhone 16
-   Samsung
-========================================= */
-
-@media (max-width: 700px) {
-
-    /* ==============================
-       INFORMACIÓN
-    ============================== */
-
-    .seccion-info-principal {
-        width: 100%;
-    }
-
-
-    .imagen-informacion {
-        width: 100%;
-
-        height: auto;
-
-        object-fit: contain;
-    }
-
-
-    /* ==============================
-       UBICACIÓN
-    ============================== */
-
-    .seccion-ubicacion {
-        padding:
-            70px 6%
-            90px;
-    }
-
-
-    .ubicacion-contenido {
-        grid-template-columns:
-            1fr;
-
-        gap: 75px;
-    }
-
-
-    .ubicacion-mapa h2 {
-        font-size: 58px;
-    }
-
-
-    .ubicacion-direccion {
-        font-size: 17px;
-    }
-
-
-    /* ==============================
-       MAPA
-    ============================== */
-
-    .mapa {
-        height: 250px;
-    }
-
-
-    /* ==============================
-       BOTÓN MAPS
-    ============================== */
-
-    .boton-mapa {
-        padding:
-            16px 20px;
-
-        font-size: 10px;
-
-        letter-spacing: 2px;
-    }
-
-
-    /* ==============================
-       VIDEO
-    ============================== */
-
-    .video-contenedor {
-        width: 90%;
-
-        max-width: 420px;
-    }
-
-
-    .video-mama {
-        width: 100%;
-
-        aspect-ratio: 4 / 5;
-
-        object-fit: cover;
-
-        border-width: 10px;
-    }
-
-
-    .cinta-video {
-        width: 115px;
-
-        height: 34px;
-    }
-
-}
 /* =========================================
    FOOTER
 ========================================= */
@@ -644,7 +447,6 @@ body {
     text-align: center;
 }
 
-
 .footer-info p {
     margin: 0;
 
@@ -662,20 +464,140 @@ body {
 
 
 /* =========================================
-   FOOTER EN CELULAR
+   TABLET
 ========================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
 
-    .footer-info {
-        padding: 18px 15px;
-    }
-
-    .footer-info p {
-        font-size: 12px;
+    .ubicacion-contenido {
+        gap: 55px;
     }
 
 }
+
+
+/* =========================================
+   CELULARES
+   iPHONE + SAMSUNG
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* -------------------------
+       IMAGEN INFORMACIÓN
+    ------------------------- */
+
+    .seccion-info-principal {
+        width: 100%;
+    }
+
+    .imagen-informacion {
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+    }
+
+
+    /* -------------------------
+       UBICACIÓN
+    ------------------------- */
+
+    .seccion-ubicacion {
+        padding:
+            70px 6%
+            90px;
+    }
+
+    .ubicacion-contenido {
+        grid-template-columns: 1fr;
+
+        gap: 75px;
+    }
+
+
+    /* -------------------------
+       TÍTULOS
+    ------------------------- */
+
+    .ubicacion-titulo {
+        font-size: 11px;
+
+        letter-spacing: 5px;
+    }
+
+    .ubicacion-mapa h2 {
+        font-size: 58px;
+    }
+
+    .ubicacion-direccion {
+        font-size: 17px;
+    }
+
+
+    /* -------------------------
+       MAPA
+    ------------------------- */
+
+    .mapa {
+        height: 250px;
+    }
+
+
+    /* -------------------------
+       BOTÓN MAPS
+    ------------------------- */
+
+    .boton-mapa {
+        padding: 16px 20px;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* -------------------------
+       VIDEO
+    ------------------------- */
+
+    .video-contenedor {
+        width: 90%;
+        max-width: 420px;
+    }
+
+    .video-mama {
+        width: 100%;
+
+        aspect-ratio: 4 / 5;
+
+        object-fit: cover;
+
+        border-width: 10px;
+    }
+
+    .cinta-video {
+        width: 115px;
+        height: 34px;
+    }
+
+
+    /* -------------------------
+       FOOTER
+    ------------------------- */
+
+    .footer-info {
+        padding: 20px 15px;
+    }
+
+    .footer-info p {
+        font-size: 13px;
+
+        letter-spacing: 0.8px;
+    }
+
+}
+
 
 /* =========================================
    PORTADA EN CELULAR
@@ -687,13 +609,11 @@ body {
         width: 100%;
     }
 
-
     .portada {
         width: 100%;
 
         min-height: 100svh;
     }
-
 
     .imagen-portada {
         width: 100%;
@@ -705,26 +625,35 @@ body {
         object-position: center top;
     }
 
-
     .boton-info {
         bottom: 110px;
 
-        width:
-            calc(
-                100% - 48px
-            );
+        width: calc(100% - 48px);
 
-        padding:
-            15px 20px;
+        padding: 15px 20px;
 
         font-size: 11px;
 
         letter-spacing: 2.3px;
     }
 
-
     .flecha {
         font-size: 20px;
+    }
+
+
+    /* -------------------------
+       FOOTER MÓVIL
+    ------------------------- */
+
+    .footer-info {
+        padding: 18px 15px;
+    }
+
+    .footer-info p {
+        font-size: 12px;
+
+        line-height: 1.4;
     }
 
 }
@@ -732,21 +661,21 @@ body {
 
 /* =========================================
    PANTALLAS ANGOSTAS
-   Samsung pequeños / iPhone angostos
+   SAMSUNG PEQUEÑOS / IPHONE ANGOSTOS
 ========================================= */
 
 @media (max-width: 390px) {
 
+    /* -------------------------
+       PORTADA
+    ------------------------- */
+
     .boton-info {
         bottom: 105px;
 
-        width:
-            calc(
-                100% - 38px
-            );
+        width: calc(100% - 38px);
 
-        padding:
-            14px 18px;
+        padding: 14px 18px;
 
         font-size: 10px;
 
@@ -754,24 +683,54 @@ body {
     }
 
 
+    /* -------------------------
+       UBICACIÓN
+    ------------------------- */
+
     .seccion-ubicacion {
         padding-left: 5%;
         padding-right: 5%;
     }
 
+    .ubicacion-titulo {
+        font-size: 10px;
+
+        letter-spacing: 4px;
+    }
 
     .ubicacion-mapa h2 {
         font-size: 52px;
     }
 
+    .ubicacion-direccion {
+        font-size: 16px;
+    }
+
+
+    /* -------------------------
+       MAPA
+    ------------------------- */
 
     .mapa {
         height: 225px;
     }
 
 
+    /* -------------------------
+       VIDEO
+    ------------------------- */
+
     .video-contenedor {
         width: 94%;
+    }
+
+
+    /* -------------------------
+       FOOTER
+    ------------------------- */
+
+    .footer-info p {
+        font-size: 11px;
     }
 
 }
