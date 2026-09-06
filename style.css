@@ -17,7 +17,7 @@ body {
 
 
 /* =========================================
-   PORTADA
+PORTADA
 ========================================= */
 
 .pagina-portada {
@@ -29,7 +29,7 @@ body {
 
 
 /* =========================================
-   CONTENEDOR
+CONTENEDOR
 ========================================= */
 
 .portada {
@@ -47,7 +47,7 @@ body {
 
 
 /* =========================================
-   IMAGEN
+IMAGEN
 ========================================= */
 
 .imagen-portada {
@@ -66,19 +66,18 @@ body {
 
 
 /* =========================================
-   BOTÓN
+BOTÓN
 ========================================= */
 
 .boton-info {
     position: absolute;
 
     left: 50%;
-    bottom: 45px;
+    bottom: 120px;
 
     transform: translateX(-50%);
 
     width: calc(100% - 70px);
-
     max-width: 360px;
 
     padding: 17px 24px;
@@ -94,11 +93,8 @@ body {
     color: #362624;
 
     font-family: Arial, sans-serif;
-
     font-size: 12px;
-
     font-weight: 600;
-
     letter-spacing: 3px;
 
     text-decoration: none;
@@ -110,28 +106,11 @@ body {
     box-shadow:
         0 12px 35px rgba(0, 0, 0, 0.25);
 
-    transition:
-        transform 0.25s ease,
-        background-color 0.25s ease;
+    transition: 0.25s ease;
 }
-
-
-.boton-info:hover {
-    transform:
-        translateX(-50%) translateY(-4px);
-
-    background:
-        rgba(255, 188, 210, 1);
-}
-
-
-.boton-info span {
-    font-size: 20px;
-}
-
 
 /* =========================================
-   CELULARES
+CELULARES
 ========================================= */
 
 @media (max-width: 480px) {
@@ -152,19 +131,19 @@ body {
     }
 
 
+    @media (max-width: 480px) {
+
     .boton-info {
-        bottom:
-            max(25px,
-                env(safe-area-inset-bottom));
+        bottom: 110px;
 
         width: calc(100% - 48px);
 
-        padding:
-            15px 20px;
+        padding: 15px 20px;
 
         font-size: 11px;
 
         letter-spacing: 2.3px;
     }
 
+}
 }
