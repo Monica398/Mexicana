@@ -108,7 +108,102 @@ BOTÓN
 
     transition: 0.25s ease;
 }
+/* =========================================
+   PÁGINA INFORMACIÓN
+========================================= */
 
+.pagina-info {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    background-color: #fff8ef;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.contenido-info {
+    width: 100%;
+}
+
+
+/* =========================================
+   PRIMERA SECCIÓN
+========================================= */
+
+.seccion-info-principal {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #f8dfe1;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   IMAGEN INFORMACIÓN
+========================================= */
+
+.imagen-informacion {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   SIGUIENTE SECCIÓN
+========================================= */
+
+.seccion-ubicacion {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff8ef;
+
+    color: #4b1b18;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    letter-spacing: 6px;
+}
+
+
+/* =========================================
+   CELULAR
+   iPhone + Samsung
+========================================= */
+
+@media (max-width: 600px) {
+
+    .seccion-info-principal {
+        width: 100%;
+    }
+
+    .imagen-informacion {
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+    }
+
+}
 /* =========================================
 CELULARES
 ========================================= */
