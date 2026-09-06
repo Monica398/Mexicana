@@ -624,7 +624,58 @@ body {
     }
 
 }
+/* =========================================
+   FOOTER
+========================================= */
 
+.footer-info {
+    width: 100%;
+
+    padding: 22px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #a9a227;
+
+    color: #fff8ef;
+
+    text-align: center;
+}
+
+
+.footer-info p {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    font-style: italic;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   FOOTER EN CELULAR
+========================================= */
+
+@media (max-width: 480px) {
+
+    .footer-info {
+        padding: 18px 15px;
+    }
+
+    .footer-info p {
+        font-size: 12px;
+    }
+
+}
 
 /* =========================================
    PORTADA EN CELULAR
