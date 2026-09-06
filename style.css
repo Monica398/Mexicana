@@ -134,7 +134,7 @@ CELULARES
     @media (max-width: 480px) {
 
     .boton-info {
-        bottom: 170px;
+        bottom: 110px;
 
         width: calc(100% - 48px);
 
